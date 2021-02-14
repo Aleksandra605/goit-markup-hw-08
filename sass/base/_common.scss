@@ -1,0 +1,59 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 2px solid blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+/* Body Header Footer */
+
+body * {
+  text-decoration: none;
+  font-family: "Roboto" sans-serif;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  margin: 0px 0px 0px 0px;
+}
+
+header * {
+  text-decoration: none;
+  color: var(--logo-header);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+
+footer * {
+  text-decoration: none;
+}
+
+header ul a:hover,
+header ul a:focus {
+  color: var(--logo-web);
+}
+
+.body {
+  margin: 0px;
+}

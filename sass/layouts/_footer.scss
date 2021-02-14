@@ -1,0 +1,134 @@
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  .list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .list__adress {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    font-style: normal;
+  }
+
+  .list__mailtel {
+    font-family: "Roboto";
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .list li {
+    padding-bottom: 9px;
+  }
+}
+
+.logo-footer {
+  display: block;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--white);
+  padding-bottom: 20px;
+}
+
+.footer__div {
+  width: 231px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer__social {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  display: block;
+  text-align: center;
+  width: 206px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer .social__svg {
+  fill: var(--white);
+}
+
+.footer__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-us {
+  display: block;
+  width: min-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin: 0;
+    padding-left: 93px;
+  }
+}
+
+.contact-us__form {
+  width: min-content;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .input__mail {
+    margin-bottom: 20px;
+  }
+}
+
+.input__mail {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px 0, 0, 0, 0, 15;
+  border-radius: 4px;
+  outline: none;
+  &:hover {
+    border-color: var(--logo-web);
+  }
+  &:focus {
+    border-color: var(--logo-web);
+  }
+}
+
+.input__mail:-webkit-autofill,
+.input__mail:-webkit-autofill:hover,
+.input__mail:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.footer-list {
+  list-style: none;
+  text-decoration: none;
+}

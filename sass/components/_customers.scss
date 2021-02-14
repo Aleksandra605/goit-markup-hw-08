@@ -1,0 +1,123 @@
+.section-customers {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.customers-title {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title);
+  padding-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+    padding-bottom: 50px;
+  }
+}
+
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  list-style-type: none;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+  }
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 90px;
+  margin: 15px;
+  border: 1px solid #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--logo-web);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    margin: 0;
+  }
+}
+
+.customers__svg {
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: var(--logo-web);
+  }
+}
+
+/*.customers__item {
+  display: flex;
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  margin-right: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}*/
+
+/*.customers__link:hover,
+.customers__link:focus {
+  border-color: var(--logo-web);
+}*/
+
+/*.customers__svg {
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}*/
+
+/*.customers__svg {
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: var(--logo-web);
+  }
+}*/
+
+/*.customers__link:hover .customers__svg,
+.customers__link:focus .customers__svg {
+  fill: var(--logo-web);
+}*/
