@@ -93,11 +93,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 767px) {
-    font-size: 18px;
-    line-height: 21px;
-  }
   &:hover,
   &:focus {
     color: var(--logo-web);
@@ -105,6 +103,10 @@ ul {
   &:hover .contacts__icon,
   &:focus .contacts__icon {
     fill: var(--logo-web);
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 
@@ -160,7 +162,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover::after,
   &:focus::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     width: 100%;
